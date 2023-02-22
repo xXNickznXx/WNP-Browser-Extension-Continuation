@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>WebNowPlaying Companion - Generic Settings</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="generic.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>WebNowPlaying Companion</h1>
+      <h2>Generic Settings</h2>
+    </header>
+
+    <main>
+      <nav>
+        <a href="../home/home.html"><span>&#x2B05;</span>Back</a>
+      </nav>
+      <div>
+        <input type="checkbox" id="useGeneric" name="useGeneric" />
+        <label for="useGeneric">Attempt to support unknown websites using the generic script</label>
+        <div class="sub-options">
+          <input type="checkbox" id="useGenericList" name="useGenericList" />
+          <select id="listType">
+            <option value="whitelist">whitelist</option>
+            <option value="blacklist">blacklist</option>
+          </select>
+          <label for="useGenericList">these sites.</label>
+          <textarea id="genericList" placeholder="streamable.com"></textarea>
+        </div>
+      </div>
+      <div class="note">
+        <span>&#x2139;</span>
+        <p>Reload affected pages in order for the changes to take effect</p>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <p>Made by tjhrulz (Maintained by Nickzn)</p>
+      </div>
+      <div>
+        <a href="https://www.patreon.com/tjhrulz" target="_blank">Support me (tjhrulz)<span>&#10084;</span></a>
+      </div>
+    </footer>
+
+    <script src="generic.js"></script>
+  </body>
+</html>

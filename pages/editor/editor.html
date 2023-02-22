@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>WebNowPlaying Companion - Editor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css" />
+
+    <link rel="stylesheet" href="codemirror.css" />
+
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>WebNowPlaying Companion</h1>
+      <h2>Editor</h2>
+      <div id="notExisting" class="note" hidden>
+        <span>&#x26A0;</span>
+        <p>The script for a player with the name '[NAME]' does not exist.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="top">
+        <button id="githubIssue" type="button">Create Github Issue</button>
+        <button id="delete" type="button" hidden>Delete</button>
+      </div>
+      <form name="form">
+        <div class="field">
+          <label>pattern</label>
+          <input id="pattern" type="text" name="pattern" placeholder="pattern" />
+        </div>
+        <fieldset name="musicInfo">
+          <legend>musicInfo</legend>
+          <div class="field">
+            <label>player</label>
+            <input id="player" type="text" name="player" placeholder="player" />
+          </div>
+          <div class="field">
+            <label>readyCheck</label>
+            <textarea id="readyCheck" name="readyCheck" placeholder="readyCheck"></textarea>
+          </div>
+          <div class="field">
+            <label>state</label>
+            <textarea id="state" name="state" placeholder="state"></textarea>
+          </div>
+          <div class="field">
+            <label>title</label>
+            <textarea id="title" name="title" placeholder="title"></textarea>
+          </div>
+          <div class="field">
+            <label>artist</label>
+            <textarea id="artist" name="artist" placeholder="artist"></textarea>
+          </div>
+          <div class="field">
+            <label>album</label>
+            <textarea id="album" name="album" placeholder="album"></textarea>
+          </div>
+          <div class="field">
+            <label>cover</label>
+            <textarea id="cover" name="cover" placeholder="cover"></textarea>
+          </div>
+          <div class="field">
+            <label>duration</label>
+            <textarea id="duration" name="duration" placeholder="duration"></textarea>
+          </div>
+          <div class="field">
+            <label>durationString</label>
+            <textarea id="durationString" name="durationString" placeholder="durationString"></textarea>
+          </div>
+          <div class="field">
+            <label>position</label>
+            <textarea id="position" name="position" placeholder="position"></textarea>
+          </div>
+          <div class="field">
+            <label>positionString</label>
+            <textarea id="positionString" name="positionString" placeholder="positionString"></textarea>
+          </div>
+          <div class="field">
+            <label>volume</label>
+            <textarea id="volume" name="volume" placeholder="volume"></textarea>
+          </div>
+          <div class="field">
+            <label>rating</label>
+            <textarea id="rating" name="rating" placeholder="rating"></textarea>
+          </div>
+          <div class="field">
+            <label>repeat</label>
+            <textarea id="repeat" name="repeat" placeholder="repeat"></textarea>
+          </div>
+          <div class="field">
+            <label>shuffle</label>
+            <textarea id="shuffle" name="shuffle" placeholder="shuffle"></textarea>
+          </div>
+        </fieldset>
+        <fieldset name="musicEventHandler">
+          <legend>musicEventHandler</legend>
+          <div class="field">
+            <label>readyCheck</label>
+            <textarea id="readyCheck" name="readyCheck" placeholder="readyCheck"></textarea>
+          </div>
+          <div class="field">
+            <label>playpause</label>
+            <textarea id="playpause" name="playpause" placeholder="playpause"></textarea>
+          </div>
+          <div class="field">
+            <label>next</label>
+            <textarea id="next" name="next" placeholder="next"></textarea>
+          </div>
+          <div class="field">
+            <label>previous</label>
+            <textarea id="previous" name="previous" placeholder="previous"></textarea>
+          </div>
+          <div class="field">
+            <label>progress</label>
+            <textarea id="progress" name="progress" placeholder="progress"></textarea>
+          </div>
+          <div class="field">
+            <label>progressSeconds</label>
+            <textarea id="progressSeconds" name="progressSeconds" placeholder="progressSeconds"></textarea>
+          </div>
+          <div class="field">
+            <label>volume</label>
+            <textarea id="volume" name="volume" placeholder="volume"></textarea>
+          </div>
+          <div class="field">
+            <label>repeat</label>
+            <textarea id="repeat" name="repeat" placeholder="repeat"></textarea>
+          </div>
+          <div class="field">
+            <label>shuffle</label>
+            <textarea id="shuffle" name="shuffle" placeholder="shuffle"></textarea>
+          </div>
+          <div class="field">
+            <label>toggleThumbsUp</label>
+            <textarea id="toggleThumbsUp" name="toggleThumbsUp" placeholder="toggleThumbsUp"></textarea>
+          </div>
+          <div class="field">
+            <label>toggleThumbsDown</label>
+            <textarea id="toggleThumbsDown" name="toggleThumbsDown" placeholder="toggleThumbsDown"></textarea>
+          </div>
+          <div class="field">
+            <label>rating</label>
+            <textarea id="rating" name="rating" placeholder="rating"></textarea>
+          </div>
+        </fieldset>
+        <button id="submit" type="button">Save</button>
+      </form>
+      <p id="error" class="error" hidden></p>
+    </main>
+
+    <footer>
+      <div>
+        <p>Made by tjhrulz (Maintained by Nickzn)</p>
+      </div>
+      <div>
+        <a href="https://www.patreon.com/tjhrulz" target="_blank">Support me (tjhrulz)<span>&#10084;</span></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.11/lib/codemirror.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.11/addon/hint/show-hint.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.11/addon/hint/javascript-hint.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.11/mode/javascript/javascript.js"></script>
+    <script src="editor.js"></script>
+  </body>
+</html>

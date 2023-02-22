@@ -1,0 +1,12 @@
+{
+  "name": "webnowplaying-companion",
+  "version": "0.6.0",
+  "description": "Ever wished music info from your web browser could be used in Rainmeter? Well now it can!",
+  "devDependencies": {
+    "@types/chrome": "^0.0.212",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "stylelint": "^15.1.0",
+    "stylelint-config-standard": "^30.0.1"
+  }
+}

@@ -1,0 +1,89 @@
+function setup() {
+  musicInfo = {
+    player: () => {
+      return '[[WEBSITE]]';
+    },
+
+    readyCheck: () => {
+      return;
+    },
+
+    state: () => {
+      return;
+    },
+
+    title: () => {
+      return;
+    },
+
+    artist: () => {
+      return;
+    },
+
+    album: () => {
+      return;
+    },
+
+    cover: () => {
+      return;
+    },
+
+    duration || durationString: () => {
+      return;
+    },
+
+    position || positionString: () => {
+      return;
+    },
+
+    volume: () => {
+      return;
+    },
+
+    rating: () => {
+      return;
+    },
+
+    repeat: () => {
+      return;
+    },
+
+    shuffle: () => {
+      return;
+    }
+  };
+
+  musicEventHandler = {
+    readyCheck: musicInfo.readyCheck,
+
+    playpause: () => {};
+
+    next: () => {};
+
+    previous: () => {};
+
+    progress || progressSeconds: (progress || position) => {
+      progress;
+      position;
+    },
+
+    volume: (volume) => {
+      volume;
+    },
+
+    repeat: () => {};
+
+    shuffle: () => {};
+
+    toggleThumbsUp: () => {};
+
+    toggleThumbsDown: () => {};
+
+    rating: (rating) => {
+      rating;
+    }
+  };
+}
+
+setup();
+init();

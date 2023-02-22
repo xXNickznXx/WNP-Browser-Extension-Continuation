@@ -1,0 +1,10 @@
+html body {
+  height: var(--popup-height);
+  width: var(--popup-width);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}

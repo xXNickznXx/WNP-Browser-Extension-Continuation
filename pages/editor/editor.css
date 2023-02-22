@@ -1,0 +1,21 @@
+html body {
+  max-width: 800px;
+}
+
+html body main .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+html body main form label {
+  display: block;
+}
+
+html body main form input {
+  display: block;
+  width: 100%;
+}
+
+html body main .error {
+  color: salmon;
+}

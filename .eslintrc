@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "webextensions": true,
+    "es2022": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "globals": {
+    "CodeMirror": "readonly",
+    "musicInfo": true,
+    "musicEventHandler": true,
+    "init": true,
+    "convertNumberToTimeString": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "no-redeclare": ["warn"],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }]
+  }
+}

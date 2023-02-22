@@ -1,0 +1,8 @@
+html body {
+  height: var(--popup-height);
+  width: var(--popup-width);
+}
+
+.sub-options {
+  padding-left: 20px;
+}
