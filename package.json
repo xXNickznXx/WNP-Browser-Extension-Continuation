@@ -1,5 +1,5 @@
 {
-  "name": "webnowplaying-companion",
+  "name": "wnp-browser-extension-continuation",
   "version": "0.6.0",
   "description": "Ever wished music info from your web browser could be used in Rainmeter? Well now it can!",
   "devDependencies": {

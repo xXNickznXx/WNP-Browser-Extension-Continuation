@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "WebNowPlaying Companion",
-  "short_name": "WebNowPlaying",
+  "name": "WNP Browser Extension Continuation",
+  "short_name": "WNP",
   "description": "Ever wished music info from your web browser could be used in Rainmeter? Well now it can!",
   "version": "0.6.0",
   "icons": {
@@ -47,11 +47,6 @@
       "matches": ["*://*/*"],
       "include_globs": ["*://www.disneyplus.com/*"],
       "js": ["web-now-playing.js", "websites/disney-plus.js"]
-    },
-    {
-      "matches": ["*://*/*"],
-      "include_globs": ["*://play.google.*/music/*"],
-      "js": ["web-now-playing.js", "websites/google-play-music.js"]
     },
     {
       "matches": ["*://*/*"],
@@ -141,7 +136,6 @@
         "*://*.bandcamp.com/*",
         "*://www.deezer.*/*",
         "*://www.disneyplus.com/*",
-        "*://play.google.*/music/*",
         "*://jetsetradio.live/*",
         "*://www.netflix.com/*",
         "*://www.pandora.*/*",

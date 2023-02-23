@@ -1,10 +1,13 @@
-# Web Now Playing Companion Extension
+# WNP Browser Extension Continuation
 
 The extension to go along with the WebNowPlaying plugin for Rainmeter.
 Source code and downloads for the Rainmeter plugin can be found [here](https://github.com/tjhrulz/WebNowPlaying).
 
-The extension can be found in both the [Chrome Web Store](https://chrome.google.com/webstore/detail/webnowplaying-companion/jfakgfcdgpghbbefmdfjkbdlibjgnbli) and the [Firefox Addons Store](https://addons.mozilla.org/en-US/firefox/addon/webnowplaying-companion/).
-Other browsers will be supported as requested. Please feel free to report any bugs found when using these, even on 'unsupported' browsers that can use Chrome/Firefox extensions.
+## Features
+
+- Config to activate a generic script which tries to support sites without built-in support
+  - Possibility to whitelist/blacklist certain sites
+- Possibility to add custom site scripts to better support sites without built-in support
 
 ## List of supported sites
 
@@ -22,7 +25,6 @@ Other browsers will be supported as requested. Please feel free to report any bu
 - Disney+
   - without info: artist, cover, rating, repeat, shuffle
   - without events: next, previous, progress, repeat, shuffle, toggleThumbsUp, toggleThumbsDown, rating
-- Google Play Music
 - Jet Set Radio Live
   - without info: album, rating, repeat
   - without events: previous, repeat, toggleThumbsUp, toggleThumbsDown, rating

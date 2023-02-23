@@ -84,7 +84,7 @@
     }
 
     window.open(
-      `https://github.com/tjhrulz/WebNowPlaying-BrowserExtension/issues/new?title=${encodeURIComponent(
+      `https://github.com/xXNickznXx/WNP-Browser-Extension-Continuation/issues/new?title=${encodeURIComponent(
         `Add site support for ${musicInfoFields.player.value}`
       )}&body=${encodeURIComponent(url)}`,
       '_blank'
