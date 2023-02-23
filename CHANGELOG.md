@@ -3,19 +3,19 @@
 ## New
 
 - Added support for
-  - Bandcamp (#90)
+  - Bandcamp
   - Disney+
-  - Netflix (#89)
-- Added check to change icon theme based on browser theme (#29)
+  - Netflix
+- Added check to change icon theme based on browser theme
 - Added eslint and prettier as formatters
 - Added list of supported websites (+ unsupported elements) to readme
 - Added Custom Site Editor
-- Added TODOs and manifest file for version 3, but kept mv2 because of custom sites (#87)
+- Added TODOs and manifest file for version 3, but kept mv2 because of custom sites
 
 ## Changed
 
 - Fixed support for
-  - Twitch (#78)
+  - Twitch
 - Restructured project
   - Formatted everything with eslint and prettier
   - Generalized website file structure
